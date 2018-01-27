@@ -40,12 +40,8 @@ separating line segments by their slope to decide which segments are part of the
 Then performing a linear fit to x and y using np.polyfit (function draw_line()) and using the coefficients of the fit to average the position of each of the lines and extrapolate to the top and bottom of the lane. Finally draws it on the image `img` using `color` and `thickness` for the line.
 
 
-### 2. potential shortcomings with your current pipeline
+### 2. Potential shortcomings/ Possible suggestions
 
-- The lines shake too much on the videos
+- The lines shake too much on the videos, improve the line extrapolation
 - The line size is not optimal
 
-
-### 3. Suggest possible improvements to your pipeline
-
-- Improve the line extrapolation to reduce the line shaking
