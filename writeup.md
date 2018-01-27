@@ -11,9 +11,11 @@ The goals / steps of this project are the following:
 
 The image pipeline consists on 6 steps: 
 
-####Image Pipeline step 1: Converting images into gray scale
+###Image Pipeline step 1: Converting images into gray scale
+
 function image_pipeline_gray(image) 
 Returns a gray scaled version of the input image using cv2.cvtColor method.
+
 
 ####Image Pipeline step 2: Applying Gaussian smoothing
 function image_pipeline_gaussian_blur(image)
