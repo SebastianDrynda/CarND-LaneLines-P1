@@ -1,5 +1,4 @@
-# Udacity Self-Driving Car Nanodegree    
-# Project Finding Lane Lines on the Road
+# Udacity Self-Driving Car Nanodegree - Project Finding Lane Lines on the Road
 
 This Git repository contains the code written to complete the first project on Udacity Self-Driving Car Nanodegree. This project consists of algorithms to identify lane lines on the road on a video. The video is taken from a camera at the center of a vehicle.
 
