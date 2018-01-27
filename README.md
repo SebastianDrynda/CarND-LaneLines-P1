@@ -5,6 +5,7 @@ This GIT repository contains the code written to complete the first project on U
 ## Prerequisites
 
 To run this project, you need [Anaconda](https://anaconda.org/) or [Miniconda](https://conda.io/miniconda.html) installed (please visit [this link](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) for more information.)
+Here is a great link for learning more about [Anaconda and Jupyter Notebooks](https://classroom.udacity.com/courses/ud1111).
 
 ## Installation
 To create an environment for this project use the following command:
@@ -61,9 +62,9 @@ Then using the coefficients of the fit to average the position of each of the li
 First, the pipeline is tested agains the images contained at [test_images](test_images). The output of each step is saved in a directory:
 
 - [test_images_gray](test_images_gray)
-- [test_images_blur](test_images_blur)
+- [test_images_gaussian_blur](test_images_gaussian_blur)
 - [test_images_canny](test_images_canny)
-- [test_images_region](test_images_region)
+- [test_images_roi](test_images_roi)
 - [test_images_hough](test_images_hough)
 - [test_images_merged](test_images_merged)
 
