@@ -7,7 +7,7 @@ The goals / steps of this project are the following:
 
 ## Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### Description
 
 The image pipeline consists on 6 steps: 
 
@@ -40,7 +40,7 @@ separating line segments by their slope to decide which segments are part of the
 Then performing a linear fit to x and y using np.polyfit (function draw_line()) and using the coefficients of the fit to average the position of each of the lines and extrapolate to the top and bottom of the lane. Finally draws it on the image `img` using `color` and `thickness` for the line.
 
 
-### 2. Potential shortcomings/ Possible suggestions
+### Potential shortcomings/ Possible suggestions
 
 - The lines shake too much on the videos, improve the line extrapolation
 - The line size is not optimal
