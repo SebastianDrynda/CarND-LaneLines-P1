@@ -1,10 +1,11 @@
-# Udacity Self-Driving Car Nanodegree - Finding Lane Lines on the Road
+# Udacity Self-Driving Car Nanodegree    
+# Project Finding Lane Lines on the Road
 
-This GIT repository contains the code written to complete the first project on Udacity Self-Driving Car Nanodegree. This project consists of algorithms to identify lane lines on the road on a video. The video is taken from a camera at the center of a vehicle.
+This Git repository contains the code written to complete the first project on Udacity Self-Driving Car Nanodegree. This project consists of algorithms to identify lane lines on the road on a video. The video is taken from a camera at the center of a vehicle.
 
 ## Prerequisites
 
-To run this project, you need [Anaconda](https://anaconda.org/) or [Miniconda](https://conda.io/miniconda.html) installed (please visit [this link](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) for more information.)
+To run this project, you need [Anaconda](https://anaconda.org/) or [Miniconda](https://conda.io/miniconda.html) installed (please visit [this link](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) for more information.)    
 Here is a great link for learning more about [Anaconda and Jupyter Notebooks](https://classroom.udacity.com/courses/ud1111).
 
 ## Installation
