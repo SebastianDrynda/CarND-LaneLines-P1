@@ -43,11 +43,11 @@ Merges the output of hough transformation with the original image to represent t
 
 ### Potential shortcomings / Possible suggestions
 
-- The line size is fixed, because the y1 and y2 are static values regarding the image
--> Computing y1 and y2 more dynamic depend on the image
-
-- Extrapolation algorithm is not optimal for curves 
--> Optimized the draw_line() algorithm   
--> Better parameter set for the hough transformation
--> Not using global variables (write access!) for x_prior values
+- The line size is fixed, because the y1 and y2 are static values regarding the image   
+-> Computing y1 and y2 depending on the image size, road, curves etc.    
+    
+- Extrapolation algorithm is not optimal for curves    
+-> Optimized the draw_line() algorithm          
+-> Better parameter set for the hough transformation     
+-> Not using global variables (write access!) for x_prior values    
 
