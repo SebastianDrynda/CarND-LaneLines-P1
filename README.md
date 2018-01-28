@@ -27,7 +27,7 @@ jupyter notebook P1.ipynb
 
 ## Overview
 
-The repositor contains the jupyter notebook [P1.ipynb](P1.ipynb) where the processing image pipeline is implemented.    
+The repository contains the jupyter notebook [P1.ipynb](P1.ipynb) where the processing image pipeline is implemented.    
 The image pipeline consists on 6 steps:   
 
 **Image Pipeline step 1: Converting images into gray scale**    
@@ -50,14 +50,15 @@ Masks the image segments that are not interesting in regards to the line detecti
 def image_pipeline_hough(image)    
 Use the Hough transformation to find the lines on the masked image using cv2.cv2.HoughLinesP. 
 
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by 
+separating line segments by their slope to decide which segments are part of the left line vs. the right line.
+Performing a linear fit to x and y using np.polyfit. Then, using coefficients of the fit to average the position of each of the lines and extrapolate to the top and bottom of the lane.  For removing lane shakiness, the average of the current frame lines and the previous frame lines (only x1 and x2) is computed. If the difference between x and x_prior is higher than a tolerance value, the x_prior value is taken. Finally draws it on the image `img` using `color` and `thickness` for the line.
+
 **Image Pipeline step 6: Merging original image with Hough transform lines**   
 def weighted_img(image)    
 Merges the output of hough transformation with the original image to represent the lines on it. 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by 
-separating line segments by their slope to decide which segments are part of the left line vs. the right line.
-Performing a linear fit to x and y using np.polyfit (function draw_line()).
-Then using the coefficients of the fit to average the position of each of the lines and extrapolate to the top and bottom of the lane. Finally draws it on the image `img` using `color` and `thickness` for the line.
+
 
 First, the pipeline is tested agains the images contained at [test_images](test_images). The output of each step is saved in a directory:
 
@@ -71,7 +72,6 @@ First, the pipeline is tested agains the images contained at [test_images](test_
 After that test, the pipeline is consolidated on a single function **process_image** to apply it on a video frame. The sample videos could be found [here](test_videos).
 The video after the transformation are saved on the [test_videos_output][test_videos_output] directory.
 
-An html version of the output is [here](P1.html).
 
 ## License
 This project copyright is under [MIT](LICENSE) License.
