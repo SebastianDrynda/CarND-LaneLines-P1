@@ -41,7 +41,7 @@ Merges the output of hough transformation with the original image to represent t
 
 
 
-### Potential shortcomings/ Possible suggestions
+### Potential shortcomings / Possible suggestions
 
 - The line size is fixed, because the y1 and y2 are static values regarding the image
 -> Computing y1 and y2 more dynamic depend on the image
